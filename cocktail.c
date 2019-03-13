@@ -6,6 +6,14 @@
 #include <stdef.h>
 #include <stdbool.h>
 
+void swap(int *a, int *b) {
+	int t;
+	
+	 t = *b;
+	*b = *a;
+	*a =  t;
+}
+
 void cocktail(int arr[], size_t n) {
 	int bottom = 0, top = n - 1;
 	bool swapped = true;
