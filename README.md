@@ -14,7 +14,7 @@ log(n!) = O(n log n) means that decisin tree must do O(n log n) comparissons.
 | bitonic.c     |                                                        | No          | Yes              |                      |
 | block.c       |                                                        | Yes         | Yes              |                      |
 | bogo.c        |                                                        | No          | Yes              | Trial & Error        |
-| bozo.c        |                                                        |             |                  | Trial & Error        |
+| bozo.c        |                                                        | No          | Yes              | Trial & Error        |
 | bubble.c      | Bubble sort, Sinking sort                              | Yes         | Yes              |                      |
 | bucket.c      |                                                        | Yes         | No               |                      |
 | burst.c       |                                                        | No          | No               |                      |
