@@ -1,6 +1,5 @@
 /* oddeven.c - implementation of odd-even sorting algorithm
  * (c) Copyright 2019 Bartosz Mierzynski
- * Written in C99 (if you remove bool then C89)
  */
 
 #include "sort.h"
