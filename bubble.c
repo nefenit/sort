@@ -12,6 +12,7 @@ void swap(int *a, int *b) {
 	*b = *a;
 	*a =  t;
 }
+
 /* always worst case of O(n^2) */
 void bubblesort(int arr[], size_t n) {
 	int i, j;
