@@ -27,7 +27,7 @@ int partition_lomuto(int arr[], int low, int high) {
 	int pivot = arr[low];
 	int i = low, j = low;
 	
-	for(; j <= high; j++)
+	for(; j <= high; ++j)
         	if (arr[j] <= pivot)
 			swap(&arr[i++], &arr[j]);
 	return i - 1;
