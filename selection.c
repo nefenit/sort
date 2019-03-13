@@ -3,7 +3,7 @@
  * Written in ANSI C (C89)
  */
 
-#incude <stddef.h>
+#include <stddef.h>
 
 #include "swap.h"
 
