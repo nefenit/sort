@@ -3,13 +3,7 @@
  * Written in ANSI C (C89)
  */
 
-void swap(int *a, int *b) {
-	int t;
-	
-	 t = *b;
-	*b = *a;
-	*a =  t;
-}
+#include "swap.h"
 
 /* Choosing pivot
  * - we want to avoid getting problems with partially order input and avoid 
