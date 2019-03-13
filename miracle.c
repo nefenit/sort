@@ -1,4 +1,4 @@
-/* miracle.c - implementation of miracle sort
+/* miracle.c - checks if array is sorted until it is
  * (c) Copyright Bartosz Mierzynski
  */
  
