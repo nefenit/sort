@@ -1,6 +1,5 @@
 /* cocktail.c - cocktail sort implementation
  * (c) Copyright 2019 Bartosz Mierzynski
- * Written in C99 (if you remove bool C89)
  */
 
 #include "sort.h"
