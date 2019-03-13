@@ -30,6 +30,7 @@ log(n!) = O(n log n) means that decisin tree must do O(n log n) comparissons.
 | intro.c       |                                                                                                                      | No          | Yes              |                      |
 | library.c     |                                                                                                                      | Yes         | Yes              |                      |
 | merge.c       |                                                                                                                      | Yes         | Yes              | Divide & Conquer     |                        
+| miracle.c     | Miracle sort                                                                                                         | ?           | Yes              | Trial & Error        |
 | oddeven.c     | Odd–even sort, Odd–even transposition sort, Brick sort                                                               | Yes         | Yes              |                      |
 | pancake.c     |                                                                                                                      | No          | Yes              |                      |
 | patience.c    |                                                                                                                      | No          | Yes              |                      |
