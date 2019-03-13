@@ -6,13 +6,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-void swap(int *a, int *b) {
-	int t;
-	
-	 t = *b;
-	*b = *a;
-	*a =  t;
-}
+#include "swap.h"
 
 void is_sorted(int arr[], size_t n) {
 	while(--n >= 1)
