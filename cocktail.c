@@ -3,10 +3,7 @@
  * Written in C99 (if you remove bool C89)
  */
 
-#include <stdef.h>
-#include <stdbool.h>
-
-#include "swap.h"
+#include "sort.h"
 
 void cocktail(int arr[], size_t n) {
 	int bottom = 0, top = n - 1;
