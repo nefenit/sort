@@ -1,7 +1,10 @@
 /* oddeven.c - implementation of odd-even sorting algorithm
  * (c) Copyright 2019 Bartosz Mierzynski
- * Written in ANSI C (C89)
+ * Written in C99 (if you remove bool then C89)
  */
+
+#include <stddef.h>
+#include <stdbool.h>
 
 void swap(int *a, int *b) {
 	int t;
@@ -11,22 +14,23 @@ void swap(int *a, int *b) {
 	*a =  t;
 }
 
-void oddevensort(int arr[], unsigned n) {
-	int i, is_sorted = 0;
+void oddevensort(int arr[], size_t n) {
+	int i;
+	bool is_sorted = false;
 	
 	while(!is_sorted) {
-		is_sorted = 1;
+		is_sorted = true;
 		
 		for(i = 1; i < n - 1; i += 2)
-			if(arr[i] > arr[i+1]) {
-				swap(&arr[i], &arr[i+1]);
-				is_sorted = 0;
+			if(arr[i] > arr[i + 1]) {
+				swap(&arr[i], &arr[i + 1]);
+				is_sorted = false;
 			}
 		
 		for(i = 0; i < n - 1; i += 2)
 			if(arr[i] > arr[i+1]) {
-				swap(&arr[i], &arr[i+1]);
-				is_sorted = 0;
+				swap(&arr[i], &arr[i + 1]);
+				is_sorted = false;
 			}
 	}
 }
