@@ -26,7 +26,7 @@ log(n!) = O(n log n) means that decisin tree must do O(n log n) comparissons.
 | comb.c        | No     | O(n<sup>2</sup>)       |                  |                    |                      |
 | intro.c       | No     |                        |                  |                    |                      |
 | heap.c        | No     | O(n log n)             |                  |                    |                      |
-| bozo.c        |        |                        |                  |                    |                      |
+| bozo.c        |        |                        |                  |                    | Trial & Error        |
 | gnome.c       |        | O(n<sup>2</sup>)       |                  |                    |                      |
 | strand.c      |        | O(n<sup>2</sup>)       |                  |                    |                      |
 | bead.c        |        |                        |                  |                    |                      |
