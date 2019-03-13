@@ -1,6 +1,6 @@
 /* quick.c - quicksort implementations
  * (c) Copyright 2019 Bartosz Mierzynski
- * Written in C89
+ * Written in ANSI C (C89)
  */
 
 void swap(int *a, int *b) {
