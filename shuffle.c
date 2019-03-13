@@ -12,7 +12,7 @@
 	
 	srand(time(NULL));
 	 
-	for(i = 0; i < n; i++) {
+	for(i = 0; i < n; ++i) {
 		j = rand() % n;
 		swap(&arr[i], &arr[j]);
 	}
