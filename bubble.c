@@ -1,6 +1,5 @@
 /* bubble.c - bubble sort implementation
  * (c) Copyright Bartosz Mierzynski
- * Written in ANSI C (C89)
  */
 
 #include "sort.h"
