@@ -5,13 +5,7 @@
  
 #include <stddef.h>
 
-void swap(int *a, int *b) {
-	int t;
-	
-	 t = *b;
-	*b = *a;
-	*a =  t;
-}
+#include "swap.h"
 
 /* always worst case of O(n^2) */
 void bubblesort(int arr[], size_t n) {
