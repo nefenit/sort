@@ -16,21 +16,21 @@ void swap(int *a, int *b) {
 
 void oddevensort(int arr[], size_t n) {
 	int i;
-	bool is_sorted = false;
+	bool swapped = true;
 	
-	while(!is_sorted) {
-		is_sorted = true;
+	while(swapped) {
+		swapped = false;
 		
 		for(i = 1; i < n - 1; i += 2)
 			if(arr[i] > arr[i + 1]) {
 				swap(&arr[i], &arr[i + 1]);
-				is_sorted = false;
+				swapped = true;
 			}
 		
 		for(i = 0; i < n - 1; i += 2)
 			if(arr[i] > arr[i+1]) {
 				swap(&arr[i], &arr[i + 1]);
-				is_sorted = false;
+				swapped = true;
 			}
 	}
 }
