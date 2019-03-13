@@ -2,10 +2,8 @@
  * (c) Copyright Bartosz Mierzynski
  * Written in ANSI C (C89)
  */
- 
-#include <stddef.h>
 
-#include "swap.h"
+#include "sort.h"
 
 /* always worst case of O(n^2) */
 void bubblesort(int arr[], size_t n) {
