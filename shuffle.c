@@ -3,14 +3,17 @@
  */
  
  #include <stdlib.h>
+ #include <time.h>
  
  #include "sort.h"
  
  void shuffle(int arr[], size_t n) {
-	int i, r;
+	int i, j;
 	
+	srand(time(NULL));
+	 
 	for(i = 0; i < n; i++) {
-		r = rand() % n;
-		swap(&arr[i], &arr[r]);
+		j = rand() % n;
+		swap(&arr[i], &arr[j]);
 	}
 }
