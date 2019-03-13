@@ -3,10 +3,7 @@
  * Written in C99 (if you remove bool then C89)
  */
 
-#include <stddef.h>
-#include <stdbool.h>
-
-#include "swap.h"
+#include "sort.h"
 
 void oddevensort(int arr[], size_t n) {
 	int i;
