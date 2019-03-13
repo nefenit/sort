@@ -3,12 +3,11 @@
  * Written in C99 (if you remove bool then C89)
  */
 
-#include <stdbool.h>
 #include <stdlib.h>
 
-#include "swap.h"
+#include "sort.h"
 
-void is_sorted(int arr[], size_t n) {
+bool is_sorted(int arr[], size_t n) {
 	while(--n >= 1)
 		if(arr[n] < arr[n - 1])
 			return false;
