@@ -5,7 +5,5 @@
  #include "sort.h" 
  
  void miraclesort(int arr[], size_t n) {
- 	for(;;)
-		if(is_sorted(arr, n))
-			break;
+ 	while((!is_sorted(arr, n));
  }
