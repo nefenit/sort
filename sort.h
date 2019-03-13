@@ -6,9 +6,11 @@
 
 /* Sorts */
 void bogosort(int[], size_t);
+void bozosort(int[], size_t);
 void bubblesort(int[], size_t);
 void bubblesort2(int[], size_t);
 void cocktail(int[], size_t);
+void miraclesort(int[], size_t);
 void oddevensort(int[], size_t);
 void quicksort_recursive_lomuto(int[], int, int);
 void quicksort_recursive_hoare(int[], int, int);
