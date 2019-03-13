@@ -1,6 +1,5 @@
 /* quick.c - quicksort implementations
  * (c) Copyright 2019 Bartosz Mierzynski
- * Written in ANSI C (C89)
  */
 
 #include "sort.h"
