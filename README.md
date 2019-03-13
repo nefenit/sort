@@ -1,5 +1,5 @@
 # sort
-Sorting algorithms
+Written in C99 (or C89 if you replace stdbool.h)
 
 # Problem of sorting
 There is n! different permutations of n element array.
