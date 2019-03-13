@@ -3,9 +3,7 @@
  * Written in ANSI C (C89)
  */
 
-#include <stddef.h>
-
-#include "swap.h"
+#include "sort.h"
 
 void selectionsort(int arr[], size_t n) {
 	int i, j, k;
