@@ -6,10 +6,12 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-void swap(int *x, int *y) {
-	int t = *x;
-	*x = *y;
-	*y = t;
+void swap(int *a, int *b) {
+	int t;
+	
+	 t = *b;
+	*b = *a;
+	*a =  t;
 }
 
 void is_sorted(int arr[], size_t n) {
