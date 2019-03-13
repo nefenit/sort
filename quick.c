@@ -3,7 +3,7 @@
  * Written in ANSI C (C89)
  */
 
-#include "swap.h"
+#include "sort.h"
 
 /* Choosing pivot
  * - we want to avoid getting problems with partially order input and avoid 
