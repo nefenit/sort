@@ -5,13 +5,7 @@
 
 #incude <stddef.h>
 
-void swap(int *a, int *b) {
-	int t;
-	
-	 t = *b;
-	*b = *a;
-	*a =  t;
-}
+#include "swap.h"
 
 void selectionsort(int arr[], size_t n) {
 	int i, j, k;
