@@ -7,9 +7,9 @@
 void selectionsort(int arr[], size_t n) {
 	int i, j, k;
 	
-	for(i = 0; i < n; i++) {
+	for(i = 0; i < n; ++i) {
 		k = i;
-		for(j = i + 1; j < n; j++)
+		for(j = i + 1; j < n; ++j)
 			if(arr[j] < arr[k])
 				k = j;
 		swap(&arr[k], &arr[i]);
