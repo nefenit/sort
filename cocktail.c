@@ -10,14 +10,14 @@ void cocktail(int arr[], size_t n) {
 	
 	while(swapped) {
 		swapped = false;
-		for(int i = bottom; i < top; i++) {
+		for(int i = bottom; i < top; ++i) {
 			if(arr[i] > arr[i + 1]) {
 				swap(&arr[i], &arr[i + 1]);
 				swapped = true;
 			}
 		}
 		top--;
-		for(int i = top; i > bottom; i--) {
+		for(int i = top; i > bottom; --i) {
 			if(arr[i] < arr[i - 1]) {
 				swap(&arr[i], &arr[i - 1]);
 				swapped = true;
