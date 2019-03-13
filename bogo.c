@@ -1,4 +1,4 @@
-/* bogo.c - bogo sort implementation
+/* bogo.c - shuffles all elements until they are sorted
  * (c) Copyright 2019 Bartosz Mierzynski
  */
 
