@@ -16,13 +16,13 @@ void cocktail(int arr[], size_t n) {
 				swapped = true;
 			}
 		}
-		top--;
+		--top;
 		for(int i = top; i > bottom; --i) {
 			if(arr[i] < arr[i - 1]) {
 				swap(&arr[i], &arr[i - 1]);
 				swapped = true;
 			}
 		}
-		bottom++;
+		++bottom;
 	}
 }
