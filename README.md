@@ -25,6 +25,9 @@ Complexity is noted in Big O notation
 |:-----|:-------------------------------------|
 | S    | Stability                            |
 | CB   | Comparison-based                     |
+| AP   | Algorithmic Paradigm                 |
+| T&E  | Trial & Error                        |
+| D&C  | Divide & Conquer                     |
 | BTC  | Best Time Complexity                 |
 | ATC  | Average Time Complexity              |
 | WTC  | Worst Time Complexity                |
@@ -32,46 +35,46 @@ Complexity is noted in Big O notation
 
 ## Versions
 
-| File          | Name(s)                                                                           |  S  | CB  | Algorithmic Paradigm |   BTC   | ATC | WTC | WSC |
-|:--------------|:----------------------------------------------------------------------------------|:---:|:---:|:---------------------|:--------|:----|:----|:---:|
-| bead.c        | Bead, Gravity                                                                     | -   | No  |                      |                      |                         |                       |
-| bitonic.c     |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| block.c       |                                                                                   | Yes | Yes |                      | n       | n log n | n log n | 1 |
-| bogo.c        |                                                                                   | No  | Yes | Trial & Error        |                      |                         |                       |
-| bozo.c        |                                                                                   | No  | Yes | Trial & Error        |                      |                         |                       |
-| bubble.c      | Bubble, Sinking                                                                   | Yes | Yes |                      |                      |                         |                       |
-| bucket.c      |                                                                                   | Yes | No  |                      |                      |                         |                       |
-| burst.c       |                                                                                   | No  | No  |                      |                      |                         |                       |
-| cocktail.c    | Cocktail shaker, Bidirectional bubble, Cocktail, Shaker, Ripple, Shuffle, Shuttle | Yes | Yes |                      | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
-| comb.c        |                                                                                   | No  | Yes |                      | n log n | n<sup>2</sup> | n<sup>2</sup> | 1 |
-| counting.c    |                                                                                   | Yes | No  |                      |                      |                         |                       |
-| cube.c        |                                                                                   | Yes | Yes |                      |                      |                         |                       |
-| cycle.c       |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| flash.c       |                                                                                   | No  | No  |                      |                      |                         |                       |
-| gnome.c       |                                                                                   | Yes | Yes |                      | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
-| heap.c        |                                                                                   | No  | Yes | Divide & Conquer     |                      |                         |                       |
-| insertion.c   |                                                                                   | Yes | Yes |                      |                      |                         |                       |
-| intro.c       |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| library.c     |                                                                                   | Yes | Yes |                      |                      |                         |                       |
-| merge.c       |                                                                                   | Yes | Yes | Divide & Conquer     |                      |                         |                       |                        
-| miracle.c     | Miracle, Lucky                                                                    | ?   | Yes | Trial & Error        | 1       | infinity      | infinity      | 1 |
-| oddeven.c     | Odd–even, Odd–even transposition, Brick                                           | Yes | Yes |                      | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
-| pancake.c     |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| patience.c    |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| permutation.c |                                                                                   |     |     | Trial & Error        |                      |                         |                       |
-| pigeonhole.c  |                                                                                   | Yes | No  |                      |                      |                         |                       |
-| postman.c     |                                                                                   | -   | No  |                      |                      |                         |                       |
-| radix.c       |                                                                                   | Depends | No  |                      |                      |                         |                       |
-| selection.c   |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| shell.c       |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| spaghetti.c   |                                                                                   | Yes | -   |                      |                      |                         |                       |
-| spread.c      |                                                                                   | No  | No  |                      |                      |                         |                       |
-| stooge.c      |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| strand.c      |                                                                                   | Yes | Yes |                      | n       | n<sup>2</sup> | n<sup>2</sup> | n |
-| sleep.c       |                                                                                   |     |     |                      |                      |                         |                       |
-| smooth.c      |                                                                                   | No  | Yes |                      | n       | n log n | n log n | 1 |
-| stooge.c      |                                                                                   | No  | Yes |                      |                      |                         |                       |
-| tim.c         |                                                                                   | Yes | Yes |                      |                      |                         |                       |
-| tournament.c  |                                                                                   | No  | Yes |                      | n log n | n log n        | n log n | n |                       |
-| tree.c        | Binary tree                                                                       | Yes | Yes |                      |                      |                         |                       |
-| quick.c       |                                                                                   | No  | Yes | Divide & Conquer     |                      |                         |                       |
+| File          | Name(s)                                                                           |  S  | CB  | AP  |   BTC   | ATC | WTC | WSC |
+|:--------------|:----------------------------------------------------------------------------------|:---:|:---:|:----|:--------|:----|:----|:---:|
+| bead.c        | Bead, Gravity                                                                     | -   | No  |     |                      |                         |                       |
+| bitonic.c     |                                                                                   | No  | Yes |     |                      |                         |                       |
+| block.c       |                                                                                   | Yes | Yes |     | n       | n log n | n log n | 1 |
+| bogo.c        |                                                                                   | No  | Yes | T&E |                      |                         |                       |
+| bozo.c        |                                                                                   | No  | Yes | T&E |                      |                         |                       |
+| bubble.c      | Bubble, Sinking                                                                   | Yes | Yes |     |                      |                         |                       |
+| bucket.c      |                                                                                   | Yes | No  |     |                      |                         |                       |
+| burst.c       |                                                                                   | No  | No  |     |                      |                         |                       |
+| cocktail.c    | Cocktail shaker, Bidirectional bubble, Cocktail, Shaker, Ripple, Shuffle, Shuttle | Yes | Yes |     | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
+| comb.c        |                                                                                   | No  | Yes |     | n log n | n<sup>2</sup> | n<sup>2</sup> | 1 |
+| counting.c    |                                                                                   | Yes | No  |     |                      |                         |                       |
+| cube.c        |                                                                                   | Yes | Yes |     |                      |                         |                       |
+| cycle.c       |                                                                                   | No  | Yes |     |                      |                         |                       |
+| flash.c       |                                                                                   | No  | No  |     |                      |                         |                       |
+| gnome.c       |                                                                                   | Yes | Yes |     | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
+| heap.c        |                                                                                   | No  | Yes | D&C |                      |                         |                       |
+| insertion.c   |                                                                                   | Yes | Yes |     |                      |                         |                       |
+| intro.c       |                                                                                   | No  | Yes |     |                      |                         |                       |
+| library.c     |                                                                                   | Yes | Yes |     |                      |                         |                       |
+| merge.c       |                                                                                   | Yes | Yes | D&C |                      |                         |                       |                        
+| miracle.c     | Miracle, Lucky                                                                    | ?   | Yes | T&E | 1       | infinity      | infinity      | 1 |
+| oddeven.c     | Odd–even, Odd–even transposition, Brick                                           | Yes | Yes |     | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
+| pancake.c     |                                                                                   | No  | Yes |     |                      |                         |                       |
+| patience.c    |                                                                                   | No  | Yes |     |                      |                         |                       |
+| permutation.c |                                                                                   |     |     | T&E |                      |                         |                       |
+| pigeonhole.c  |                                                                                   | Yes | No  |     |                      |                         |                       |
+| postman.c     |                                                                                   | -   | No  |     |                      |                         |                       |
+| radix.c       |                                                                                   | Depends | No  |     |                      |                         |                       |
+| selection.c   |                                                                                   | No  | Yes |     |                      |                         |                       |
+| shell.c       |                                                                                   | No  | Yes |     |                      |                         |                       |
+| spaghetti.c   |                                                                                   | Yes | -   |     |                      |                         |                       |
+| spread.c      |                                                                                   | No  | No  |     |                      |                         |                       |
+| stooge.c      |                                                                                   | No  | Yes |     |                      |                         |                       |
+| strand.c      |                                                                                   | Yes | Yes |     | n       | n<sup>2</sup> | n<sup>2</sup> | n |
+| sleep.c       |                                                                                   |     |     |     |                      |                         |                       |
+| smooth.c      |                                                                                   | No  | Yes |     | n       | n log n | n log n | 1 |
+| stooge.c      |                                                                                   | No  | Yes |     |                      |                         |                       |
+| tim.c         |                                                                                   | Yes | Yes |     |                      |                         |                       |
+| tournament.c  |                                                                                   | No  | Yes |     | n log n | n log n        | n log n | n |                       |
+| tree.c        | Binary tree                                                                       | Yes | Yes |     |                      |                         |                       |
+| quick.c       |                                                                                   | No  | Yes | D&C |                      |                         |                       |
