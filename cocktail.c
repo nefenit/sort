@@ -4,7 +4,7 @@
 
 #include "sort.h"
 
-void cocktail(int arr[], size_t n) {
+void cocktailsort(int arr[], size_t n) {
 	int bottom = 0, top = n - 1;
 	bool swapped = true;
 	
