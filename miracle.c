@@ -6,7 +6,7 @@
  
  void miraclesort(int arr[], size_t n) {
  	for(;;) {
-		if(is_sorted(arr, n)))
+		if(is_sorted(arr, n))
 			break;
 	}
  }
