@@ -56,9 +56,9 @@ int partition_hoare(int arr[], int low, int high) {
 	
 	for(;;) {
 		while(arr[j] > pivot)
-			j--;
+			--j;
 		while(arr[i] < pivot)
-			i++;
+			++i;
 		if(i < j)
 			swap(&arr[i++], &arr[j--]);	
 		else
