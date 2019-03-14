@@ -1,4 +1,4 @@
-/* cocktail.c - cocktail sort implementation
+/* cocktail.c - bidirectional bubble sort
  * (c) Copyright 2019 Bartosz Mierzynski
  */
 
