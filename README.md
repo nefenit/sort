@@ -51,13 +51,13 @@ Complexity is noted in Big O notation
 | cube.c        |                                                                                   | Yes | Yes |     |                      |                         |                       |
 | cycle.c       |                                                                                   | No  | Yes |     |                      |                         |                       |
 | flash.c       |                                                                                   | No  | No  |     |                      |                         |                       |
-| gnome.c       |                                                                                   | Yes | Yes |     | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
+| gnome.c       | Gnome, Stupid                                                                     | Yes | Yes |     | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
 | heap.c        |                                                                                   | No  | Yes | D&C |                      |                         |                       |
 | insertion.c   |                                                                                   | Yes | Yes |     |                      |                         |                       |
 | intro.c       |                                                                                   | No  | Yes |     |                      |                         |                       |
 | library.c     |                                                                                   | Yes | Yes |     |                      |                         |                       |
 | merge.c       |                                                                                   | Yes | Yes | D&C |                      |                         |                       |                        
-| miracle.c     | Miracle, Lucky                                                                    | ?   | Yes | T&E | 1       | infinity      | infinity      | 1 |
+| miracle.c     | Miracle, Lucky                                                                    | ?   | Yes | T&E | 1       | inf           | inf          | 1 |
 | oddeven.c     | Odd–even, Odd–even transposition, Brick                                           | Yes | Yes |     | n       | n<sup>2</sup> | n<sup>2</sup> | 1 |
 | pancake.c     |                                                                                   | No  | Yes |     |                      |                         |                       |
 | patience.c    |                                                                                   | No  | Yes |     |                      |                         |                       |
