@@ -13,6 +13,7 @@ void bubblesort2r(int[], size_t);
 void cocktailsort(int[], size_t);
 void gnomesort(int[], size_t);
 void gnomesort1(int[], size_t);
+void insertionsort(int[], size_t);
 void miraclesort(int[], size_t);
 void oddevensort(int[], size_t);
 void quicksort_recursive_lomuto(int[], int, int);
