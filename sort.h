@@ -9,6 +9,7 @@ void bogosort(int[], size_t);
 void bozosort(int[], size_t);
 void bubblesort(int[], size_t);
 void bubblesort2(int[], size_t);
+void bubblesort2r(int[], size_t);
 void cocktail(int[], size_t);
 void miraclesort(int[], size_t);
 void oddevensort(int[], size_t);
