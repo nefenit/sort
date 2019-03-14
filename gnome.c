@@ -19,7 +19,6 @@ void gnomesort(int arr[], size_t n) {
 	}
 }
 
-
 void gnomesort1(int arr[], size_t n) {
 	int i = 1;
 	
@@ -33,4 +32,13 @@ void gnomesort1(int arr[], size_t n) {
 				i = 1;
 		}
 	}
+}
+
+/* optimized version */
+void gnomesort2() {
+	int i, j;
+	
+	for(i = 1; i <= n; i++) {
+	while(j = i; j > 0 && a[j-1] > a[j], --j)
+	swap(&a[i - 1], &a[i]);
 }
