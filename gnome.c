@@ -38,7 +38,7 @@ void gnomesort1(int arr[], size_t n) {
 void gnomesort2() {
 	int i, j;
 	
-	for(i = 1; i <= n; i++) {
+	for(i = 1; i <= n; ++i) {
 	while(j = i; j > 0 && a[j-1] > a[j], --j)
 	swap(&a[i - 1], &a[i]);
 }
