@@ -47,7 +47,7 @@ void bubblesort2(int arr[], size_t n) {
 }
 
 /* recursive version of the improved iterative one */
-void bubblesort2r(int arr[], int n) {
+void bubblesort2r(int arr[], size_t n) {
 	int i;
 	
 	if (n == 1) 
