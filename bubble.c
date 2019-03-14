@@ -38,8 +38,8 @@ void bubblesort2(int arr[], size_t n) {
 	
 	for(i = 0; i < n; ++i)
 	for(j = n - 1; j > i; --j)
-	if(a[j] < a[j - 1])
-	swap(a[j], a[j - 1]);
+	if(arr[j] < arr[j - 1])
+	swap(arr[j], arr[j - 1]);
 	/*for(i = 0; i < n; ++i)
 	for(j = 0; j < n - 1 - i; ++j)
 	if(arr[j] > arr[j + 1])
