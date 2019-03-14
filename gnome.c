@@ -27,7 +27,7 @@ void gnomesort1(int arr[], size_t n) {
 		if(a[i - 1] <= a[i]) {
 			++i;
 		} else {
-			swap(&a[i - 1], &a[i]);
+			swap(&a[i], &a[i - 1]);
 			--i;
 			if(i == 0)
 				i = 1;
