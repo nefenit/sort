@@ -1,8 +1,21 @@
-/* bubble.c - bubble sort implementation
+/* bubble.c - "bubbling" sort 
  * (c) Copyright Bartosz Mierzynski
  */
 
 #include "sort.h"
+
+/* bubbling is the property of bubblesort
+ * which is that after one outer loop
+ * biggest yet unsorted element is placed last in array
+ *
+ * Example: 4 elements
+ * after outer loop iteration | array
+ * 0 -> *noise* 1st highest
+ * 1 -> *noise* 2nd highest 1st highest
+ * 2 -> *noise* 3rd highest 2nd highest 1st highest
+ * 3 -> 4rd highest 3rd highest 2nd highest 1st highest
+ * SORTED
+ */
 
 /* always worst case of O(n^2) */
 void bubblesort(int arr[], size_t n) {
@@ -32,3 +45,17 @@ void bubblesort2(int arr[], size_t n) {
 	if(arr[j] > arr[j + 1])
 	swap(&arr[j], &arr[j + 1]);*/
 }
+
+/* recursive version of the improved iterative one */
+void bubblesort2r(int arr[], int n) {
+	int i;
+	
+	if (n == 1) 
+		return; 
+
+	for (i = 0; i < n - 1; i++)
+		if (arr[i] > arr[i + 1]) 
+			swap(&arr[i], &arr[i + 1]); 
+
+	bubblesort2r(arr, n-1); 
+} 
