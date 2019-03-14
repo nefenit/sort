@@ -4,6 +4,7 @@
 
 #include "sort.h"
 
+/* selection sort by finding smallest element*/
 void selectionsort(int arr[], size_t n) {
 	int i, j, k;
 	
