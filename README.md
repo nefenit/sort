@@ -9,7 +9,7 @@ X: {(a<sub>n</sub>) &isin; &#8484;<sup>n</sup> | n &isin; &#8469;<sub>0</sub>}
 
 ## Output
 
-Y: one specific "sorted" (a<sub>n</sub>) &isin; S<sub></sub>(a<sub>n</sub>)
+Y: (a<sub>n</sub>) &isin; S<sub></sub>(a<sub>n</sub>) where &forall;<sub>n &isin; &#8469;<sub>0</sub></sub> a<sub>n</sub> < a<sub>n+1</sub> 
 
 # Stability
 Algorithm which does not change order of elements with the same value.
@@ -41,8 +41,6 @@ Which implies that:
   * = n log(n/e)
   * = n log n - n log e
   * = &Omega;(n log n)
-
-
 
 At each level of the tree comparison halves the number of future comparisons 
 and algorithm doesn't look into the wrong part of tree which means that the algorithm performs O(log n!) comparisons   
