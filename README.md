@@ -1,5 +1,5 @@
 # sort
-Written in C99 (or C89 if you replace stdbool.h)
+Static library written in C99 (or C89 if you replace stdbool.h)
 
 # Formal specification
 
@@ -11,23 +11,41 @@ X: {(a<sub>n</sub>) &isin; &#8484;<sup>n</sup> | n &isin; &#8469;<sub>0</sub>}
 
 Y: one specific "sorted" (a<sub>n</sub>) &isin; S<sub></sub>(a<sub>n</sub>)
 
-
-# Problem of sorting
-There is n! different permutations of n element array.
-In decision tree there is at least n! leafes, it is a binary tree with height of at least log<sub>2</sub>(n!).
-log(n!) = O(n log n) means that decisin tree must do O(n log n) comparissons.
-
 # Stability
-Does not change order of elements with the same value.
+Algorithm which does not change order of elements with the same value.
 Any sorting algorithm can be made stable. 
 Stability can be achieved by taking index of elements into consideration.
 This change can be acheved with little impact on efficency and some extra space, most likely &#1012;(n).
 
 # In-place
-Algorithm uses constant extra space a.k.a O(1).
+Algorithm using constant extra space a.k.a O(1).
 
 # Comparison-based
-Algorithm comparing elements of array with each other to find the sorted array.
+Algorithm comparing elements of array with each other placing it either to left or right to find the sorted array. 
+This operations can be represented by binary tree a.k.a decision tree where each node is a single comparison. 
+Each possible case of order of n elements is n! 
+this means that comparision-based sorting tree has to have at least n! leafs to represent each case of order at least once. 
+Any binary tree of height h has to have at least 2<sup>h</sup> leafs.
+This leaves us whith following inequality:
+
+* 2<sup>h</sup> &ge; n!
+* h &ge; log<sub>2</sub>(n!)
+
+From Stirling approximation we know that:
+
+* n! > (n/e)<sup>n</sup>
+
+Which implies that:
+
+* h &ge; log(n/e)<sup>n</sup> 
+  * = n log(n/e)
+  * = n log n - n log e
+  * = &Omega;(n log n)
+
+
+
+At each level of the tree comparison halves the number of future comparisons 
+and algorithm doesn't look into the wrong part of tree which means that the algorithm performs O(log n!) comparisons   
 
 # Legend
 Complexity is noted in Big O notation
