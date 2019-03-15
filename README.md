@@ -11,7 +11,7 @@ X: {(a<sub>n</sub>) &isin; &#8484;<sup>n</sup> | n &isin; &#8469;<sub>0</sub>}
 
 ## Output
 
-Y: {&pi; &isin; S(a<sub>n</sub>) | &forall;<sub>m &isin; &#8469;<sub>0</sub> &cap; [0; n-1]</sub> &pi;(m) < &pi;(m+1) }
+Y: {&pi; &isin; S(a<sub>n</sub>) | &forall;<sub>m &isin; {x &isin; &#8469;<sub>0</sub> | 0 &le; x &le; n-1}</sub> &pi;(m) < &pi;(m+1) }
 
 # Stability
 Algorithm which does not change order of elements with the same value.
