@@ -35,14 +35,14 @@ This leaves us whith following inequality:
 
 From Stirling approximation we know that:
 
-* n! > (n/e)<sup>n</sup>
+* n! > (n&divide;<i>e</i>)<sup>n</sup>
 
 Which implies that:
 
-* h &ge; log(n/e)<sup>n</sup>
-  * log(n/e)<sup>n</sup> 
-  * = n log(n/e)
-  * = n log n - n log e
+* h &ge; log(n&divide;<i>e</i>)<sup>n</sup>
+  * log(n&divide;<i>e</i>)<sup>n</sup> 
+  * = n log(n&divide;<i>e</i>)
+  * = n log n - n log <i>e</i>
   * = &Omega;(n log n)
 
 At each level of the tree comparison halves the number of future comparisons 
