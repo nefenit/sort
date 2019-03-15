@@ -39,7 +39,8 @@ From Stirling approximation we know that:
 
 Which implies that:
 
-* h &ge; log(n/e)<sup>n</sup> 
+* h &ge; log(n/e)<sup>n</sup>
+  * log(n/e)<sup>n</sup> 
   * = n log(n/e)
   * = n log n - n log e
   * = &Omega;(n log n)
