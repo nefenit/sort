@@ -1,5 +1,5 @@
 # sort
-Static library written in C99 (or C89 if you replace stdbool.h)
+Static library of sorting algorithms written in C99 (or C89 if you replace stdbool.h)
 
 # Formal specification
 Sorting algorithm is a function &#402;:X&#8614;Y which as input takes a list a.k.a array and outputs a specific permutation
