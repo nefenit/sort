@@ -1,6 +1,17 @@
 # sort
 Written in C99 (or C89 if you replace stdbool.h)
 
+# Formal specification
+
+## Input
+
+X: {(a<sub>n</sub>) &isin; &#8484;<sup>n</sup> | n &isin; &#8469;<sub>0</sub>}
+
+## Output
+
+Y: one specific "sorted" (a<sub>n</sub>) &isin; S<sub></sub>(a<sub>n</sub>)
+
+
 # Problem of sorting
 There is n! different permutations of n element array.
 In decision tree there is at least n! leafes, it is a binary tree with height of at least log<sub>2</sub>(n!).
@@ -10,7 +21,7 @@ log(n!) = O(n log n) means that decisin tree must do O(n log n) comparissons.
 Does not change order of elements with the same value.
 Any sorting algorithm can be made stable. 
 Stability can be achieved by taking index of elements into consideration.
-This change can be acheved with little impact on efficency and some extra space, most likely Θ(n).
+This change can be acheved with little impact on efficency and some extra space, most likely &#1012;(n).
 
 # In-place
 Algorithm uses constant extra space a.k.a O(1).
